@@ -30,7 +30,9 @@ class ViewController: UIViewController {
         
         let resultImc :Float! = Float(valorPeso/alturaMultiplicada)
         
-        resultadoImc.text! = String(resultImc)
+        let rounded :Float! = Float(round(resultImc))
+        
+        resultadoImc.text! = String(format: "%.10f", resultImc)
         
 
         
