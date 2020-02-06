@@ -14,7 +14,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var campoTexto: UITextField!
+    
+    
+    @IBOutlet weak var titulo: UILabel!
+    
 
-
+    @IBAction func trocarNome(_ sender: Any) {
+        
+        titulo.text! = campoTexto.text!
+        campoTexto.text! = ""
+        
+    }
+    
 }
 

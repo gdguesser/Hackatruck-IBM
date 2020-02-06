@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -23,6 +23,7 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="trocarNome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Prh-zO-kKZ"/>
                                     <segue destination="I2r-IY-LFe" kind="show" identifier="signIn" id="wIe-4h-gsc"/>
                                 </connections>
                             </button>
@@ -72,6 +73,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="I0Y-GS-sni"/>
+                    <connections>
+                        <outlet property="campoTexto" destination="uST-6B-sCA" id="chc-Uh-Fa5"/>
+                        <outlet property="titulo" destination="vIH-VW-zsx" id="YVU-Hu-9aG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIm-kF-5WN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2081" y="724"/>
+            <point key="canvasLocation" x="2079.7101449275365" y="723.88392857142856"/>
         </scene>
     </scenes>
     <resources>
